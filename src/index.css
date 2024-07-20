@@ -1,0 +1,181 @@
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f5f7;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.list-item.TASK_ARCHIVED {
+  opacity: 0.5;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox .checkbox-custom {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox .checkbox-custom:after {
+  content: "✓";
+  font-size: 16px;
+  color: #5e6c84;
+  display: none;
+}
+
+.checkbox input[type="checkbox"]:checked + .checkbox-custom:after {
+  display: block;
+}
+
+.title {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+
+.title input[type="text"] {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #172b4d;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title input[type="text"]::placeholder {
+  color: #b8c2cc;
+}
+
+.pin-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pin-button .icon-star {
+  font-size: 20px;
+  color: #e2e4e6;
+}
+
+.pin-button:hover .icon-star,
+.pin-button:focus .icon-star {
+  color: #f4c542;
+}
+
+.list-items {
+  padding: 20px;
+  background: #f4f5f7;
+  border-radius: 3px;
+}
+
+.loading-item {
+  display: flex;
+  align-items: center;
+  background: #e1e4e8;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.glow-checkbox {
+  width: 20px;
+  height: 20px;
+  background: #d8dce6;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.glow-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.glow-text span {
+  width: 100px;
+  height: 16px;
+  background: #d8dce6;
+  border-radius: 3px;
+}
+
+.wrapper-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #f4f5f7;
+  border-radius: 3px;
+}
+
+.wrapper-message .icon-check {
+  width: 24px;
+  height: 24px;
+  background: url("data:image/svg+xml;base64,<SVG_CONTENT>") no-repeat center
+    center;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
+.wrapper-message .title-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #172b4d;
+  margin: 0;
+}
+
+.wrapper-message .subtitle-message {
+  font-size: 14px;
+  color: #6b778c;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border: 1px solid #d8e0e8;
+  border-radius: 3px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.task-item .task-title {
+  flex-grow: 1;
+  margin: 0 10px;
+  font-size: 16px;
+  color: #172b4d;
+}
+
+.task-item .pin-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.task-item .pin-button .icon-star {
+  font-size: 20px;
+  color: #e2e4e6;
+}
+
+.task-item .pin-button:hover .icon-star {
+  color: #f4c542;
+}
