@@ -19,9 +19,9 @@ export default {
 export const Default = {
   args: {
     task: {
-      id: "1",
-      title: "Test Task",
-      state: "TASK_INBOX",
+      "id": "1",
+      "title": "Test Task",
+      "state": "TASK_kfdklfjdklfjdlkfjdlkfjldfjldjfldjfljljldfjdlfjldjfldfjINBOX"
     },
   },
 };

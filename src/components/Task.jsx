@@ -30,6 +30,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           name="title"
           id={`title-${id}`}
           placeholder="Input title"
+          style={{ textOverflow: 'ellipsis' }}
         />
       </label>
       {state !== "TASK_ARCHIVED" && (
