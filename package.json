@@ -8,11 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
+    "test-storybook": "test-storybook",
     "build-storybook": "storybook build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.6",
     "@storybook/addon-a11y": "^8.2.5",
+    "@storybook/test-runner": "^0.19.1",
+    "msw-storybook-addon": "^2.0.3",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
@@ -31,12 +34,19 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "chromatic": "^11.5.6",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-plugin-storybook": "^0.8.0",
+    "msw": "^2.3.2",
     "postcss": "^8",
     "storybook": "^8.2.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
