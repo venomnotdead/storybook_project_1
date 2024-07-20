@@ -40,7 +40,7 @@ export default function Task({ task: { id, title, state }, onArchiveTask, onPinT
           aria-label={`pinTask-${id}`}
           key={`pinTask-${id}`}
         >
-          <span className={`icon-star`} />
+          pin
         </button>
       )}
     </div>
